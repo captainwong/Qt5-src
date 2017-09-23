@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C0226C3-9BEF-3CF5-95D7-35BADB865EFA}</ProjectGuid>
+    <RootNamespace>MultiDocViewer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>MultiDocViewer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>MultiDocViewer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MultiDocViewer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MultiDocViewer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>CH22\MultiDocViewer;.;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtQuick;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtWidgets;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtGui;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtANGLE;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtQml;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtNetwork;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtCore;release;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\qtmain.lib;shell32.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Quick.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Widgets.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Gui.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Qml.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Network.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\MultiDocViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>CH22\MultiDocViewer;.;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtQuick;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtWidgets;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtGui;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtANGLE;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtQml;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtNetwork;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\include\QtCore;debug;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\qtmaind.lib;shell32.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Quickd.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Guid.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Qmld.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Networkd.lib;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\MultiDocViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CH22\MultiDocViewer\htmlhandler.cpp" />
+    <ClCompile Include="CH22\MultiDocViewer\main.cpp" />
+    <ClCompile Include="CH22\MultiDocViewer\texthandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CH22\MultiDocViewer\htmlhandler.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">CH22\MultiDocViewer\htmlhandler.h;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/mkspecs/win32-msvc2015 -IE:/dev_qt/Qt5-src/CH22/MultiDocViewer -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQuick -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtWidgets -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtGui -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtANGLE -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQml -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtNetwork -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtCore -I. CH22\MultiDocViewer\htmlhandler.h -o release\moc_htmlhandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC CH22/MultiDocViewer/htmlhandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_htmlhandler.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">CH22\MultiDocViewer\htmlhandler.h;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe  -DUNICODE -DWIN32 -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/mkspecs/win32-msvc2015 -IE:/dev_qt/Qt5-src/CH22/MultiDocViewer -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQuick -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtWidgets -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtGui -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtANGLE -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQml -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtNetwork -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtCore -I. CH22\MultiDocViewer\htmlhandler.h -o debug\moc_htmlhandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC CH22/MultiDocViewer/htmlhandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_htmlhandler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="CH22\MultiDocViewer\texthandler.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">CH22\MultiDocViewer\texthandler.h;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/mkspecs/win32-msvc2015 -IE:/dev_qt/Qt5-src/CH22/MultiDocViewer -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQuick -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtWidgets -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtGui -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtANGLE -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQml -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtNetwork -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtCore -I. CH22\MultiDocViewer\texthandler.h -o release\moc_texthandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC CH22/MultiDocViewer/texthandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_texthandler.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">CH22\MultiDocViewer\texthandler.h;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\moc.exe  -DUNICODE -DWIN32 -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/mkspecs/win32-msvc2015 -IE:/dev_qt/Qt5-src/CH22/MultiDocViewer -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQuick -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtWidgets -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtGui -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtANGLE -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtQml -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtNetwork -ID:/Qt/Qt5.7.0-Windows/5.7/msvc2015/include/QtCore -I. CH22\MultiDocViewer\texthandler.h -o debug\moc_texthandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC CH22/MultiDocViewer/texthandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_texthandler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_htmlhandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_htmlhandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_texthandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_texthandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qml.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qml.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CH22\MultiDocViewer\easybooks\150.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\174.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\191.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\211.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\218.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\372.gif" />
+    <None Include="CH22\MultiDocViewer\easybooks\47945.gif" />
+    <None Include="CH22\MultiDocViewer\easybooks\526.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\545.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\827.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\850.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\888.jpg" />
+    <None Include="CH22\MultiDocViewer\ToolSeparator.qml" />
+    <None Include="CH22\MultiDocViewer\easybooks\books_button_07.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks.htm" />
+    <None Include="CH22\MultiDocViewer\images\editcopy.png" />
+    <None Include="CH22\MultiDocViewer\images\editcut.png" />
+    <None Include="CH22\MultiDocViewer\images\editpaste.png" />
+    <None Include="CH22\MultiDocViewer\images\filehtml.png" />
+    <None Include="CH22\MultiDocViewer\images\fileimage.png" />
+    <None Include="CH22\MultiDocViewer\images\filetext.png" />
+    <None Include="CH22\MultiDocViewer\main.qml" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_21.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_22.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_25.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_26.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_27.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_28.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_31.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_33.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_37.jpg" />
+    <None Include="CH22\MultiDocViewer\easybooks\mainpage_38.jpg" />
+    <CustomBuild Include="CH22\MultiDocViewer\qml.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">CH22\MultiDocViewer\qml.qrc;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\rcc.exe;CH22\MultiDocViewer\ToolSeparator.qml;CH22\MultiDocViewer\easybooks.htm;CH22\MultiDocViewer\main.qml;CH22\MultiDocViewer\images\rotaleft.png;CH22\MultiDocViewer\images\rotaright.png;CH22\MultiDocViewer\images\vieweye.png;CH22\MultiDocViewer\images\filetext.png;CH22\MultiDocViewer\images\zoomout.png;CH22\MultiDocViewer\images\editcut.png;CH22\MultiDocViewer\images\editpaste.png;CH22\MultiDocViewer\images\fileimage.png;CH22\MultiDocViewer\images\editcopy.png;CH22\MultiDocViewer\images\zoomin.png;CH22\MultiDocViewer\images\filehtml.png;CH22\MultiDocViewer\easybooks\827.jpg;CH22\MultiDocViewer\easybooks\526.jpg;CH22\MultiDocViewer\easybooks\888.jpg;CH22\MultiDocViewer\easybooks\191.jpg;CH22\MultiDocViewer\easybooks\850.jpg;CH22\MultiDocViewer\easybooks\211.jpg;CH22\MultiDocViewer\easybooks\res_pic_14.gif;CH22\MultiDocViewer\easybooks\mainpage_31.jpg;CH22\MultiDocViewer\easybooks\upload_resource.jpg;CH22\MultiDocViewer\easybooks\174.jpg;CH22\MultiDocViewer\easybooks\books_button_07.jpg;CH22\MultiDocViewer\easybooks\mainpage_33.jpg;CH22\MultiDocViewer\easybooks\218.jpg;CH22\MultiDocViewer\easybooks\372.gif;CH22\MultiDocViewer\easybooks\mainpage_21.jpg;CH22\MultiDocViewer\easybooks\mainpage_37.jpg;CH22\MultiDocViewer\easybooks\mainpage_22.jpg;CH22\MultiDocViewer\easybooks\mainpage_38.jpg;CH22\MultiDocViewer\easybooks\545.jpg;CH22\MultiDocViewer\easybooks\150.jpg;CH22\MultiDocViewer\easybooks\47945.gif;CH22\MultiDocViewer\easybooks\mainpage_25.jpg;CH22\MultiDocViewer\easybooks\mainpage_26.jpg;CH22\MultiDocViewer\easybooks\mainpage_27.jpg;CH22\MultiDocViewer\easybooks\mainpage_28.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\rcc.exe -name qml CH22\MultiDocViewer\qml.qrc -o release\qrc_qml.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC CH22/MultiDocViewer/qml.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">CH22\MultiDocViewer\qml.qrc;D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\rcc.exe;CH22\MultiDocViewer\ToolSeparator.qml;CH22\MultiDocViewer\easybooks.htm;CH22\MultiDocViewer\main.qml;CH22\MultiDocViewer\images\rotaleft.png;CH22\MultiDocViewer\images\rotaright.png;CH22\MultiDocViewer\images\vieweye.png;CH22\MultiDocViewer\images\filetext.png;CH22\MultiDocViewer\images\zoomout.png;CH22\MultiDocViewer\images\editcut.png;CH22\MultiDocViewer\images\editpaste.png;CH22\MultiDocViewer\images\fileimage.png;CH22\MultiDocViewer\images\editcopy.png;CH22\MultiDocViewer\images\zoomin.png;CH22\MultiDocViewer\images\filehtml.png;CH22\MultiDocViewer\easybooks\827.jpg;CH22\MultiDocViewer\easybooks\526.jpg;CH22\MultiDocViewer\easybooks\888.jpg;CH22\MultiDocViewer\easybooks\191.jpg;CH22\MultiDocViewer\easybooks\850.jpg;CH22\MultiDocViewer\easybooks\211.jpg;CH22\MultiDocViewer\easybooks\res_pic_14.gif;CH22\MultiDocViewer\easybooks\mainpage_31.jpg;CH22\MultiDocViewer\easybooks\upload_resource.jpg;CH22\MultiDocViewer\easybooks\174.jpg;CH22\MultiDocViewer\easybooks\books_button_07.jpg;CH22\MultiDocViewer\easybooks\mainpage_33.jpg;CH22\MultiDocViewer\easybooks\218.jpg;CH22\MultiDocViewer\easybooks\372.gif;CH22\MultiDocViewer\easybooks\mainpage_21.jpg;CH22\MultiDocViewer\easybooks\mainpage_37.jpg;CH22\MultiDocViewer\easybooks\mainpage_22.jpg;CH22\MultiDocViewer\easybooks\mainpage_38.jpg;CH22\MultiDocViewer\easybooks\545.jpg;CH22\MultiDocViewer\easybooks\150.jpg;CH22\MultiDocViewer\easybooks\47945.gif;CH22\MultiDocViewer\easybooks\mainpage_25.jpg;CH22\MultiDocViewer\easybooks\mainpage_26.jpg;CH22\MultiDocViewer\easybooks\mainpage_27.jpg;CH22\MultiDocViewer\easybooks\mainpage_28.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.7.0-Windows\5.7\msvc2015\bin\rcc.exe -name qml CH22\MultiDocViewer\qml.qrc -o debug\qrc_qml.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC CH22/MultiDocViewer/qml.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="CH22\MultiDocViewer\easybooks\res_pic_14.gif" />
+    <None Include="CH22\MultiDocViewer\images\rotaleft.png" />
+    <None Include="CH22\MultiDocViewer\images\rotaright.png" />
+    <None Include="CH22\MultiDocViewer\easybooks\upload_resource.jpg" />
+    <None Include="CH22\MultiDocViewer\images\vieweye.png" />
+    <None Include="CH22\MultiDocViewer\images\zoomin.png" />
+    <None Include="CH22\MultiDocViewer\images\zoomout.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

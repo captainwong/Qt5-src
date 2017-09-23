@@ -10,24 +10,25 @@ def upgrade(profile):
         f.close()
         with open(profile, 'w') as f:
             for line in lines:
-                if re.match("QT[\s]*\+\= core gui", line):
-                   line = "QT\t\t+= core gui widgets"
+                if re.match("QT\\t\\t\+\= core gui", line):
+                    line = "QT\t\t+= core gui widgets"
                 elif re.match("greaterThan\(QT_MAJOR_VERSION\, 4", line):
                     line = "greaterThan(QT_MAJOR_VERSION, 5): QT += widgets"
                 f.write(line)
 
 def make(profile):
     cmd = "qmake -tp vc " + profile
-    print subprocess.check_output(cmd, shell=True).decode()
+    print("calling: " + cmd)
+    print(subprocess.call(cmd, shell=True))
 
 
 def walk(rootdir):
     for root, ds, fs in os.walk(rootdir):
         for f in fs:
             path = os.path.join(root, f)
-            if(path[-4:] == ".pro"):
+            if path[-4:] == ".pro":
                 upgrade(path)
                 make(path)
 
-if(__file__ == "__main__"):
+if __name__ == "__main__":
     walk("E:\\dev_qt\\Qt5-src")
