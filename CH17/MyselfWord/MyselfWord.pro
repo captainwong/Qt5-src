@@ -6,8 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-qtHaveModule(printsupport): QT += printsupport
+greaterThan(QT_MAJOR_VERSION, 5): QT += widgetsqtHaveModule(printsupport): QT += printsupport
 TARGET = MyselfWord
 TEMPLATE = app
 

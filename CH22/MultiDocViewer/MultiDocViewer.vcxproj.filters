@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="htmlhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texthandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="htmlhandler.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="texthandler.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_htmlhandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_htmlhandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_texthandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_texthandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="easybooks\150.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\174.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\191.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\211.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\218.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\372.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\47945.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\526.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\545.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\827.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\850.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\888.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ToolSeparator.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\books_button_07.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks.htm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\editcopy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\editcut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\editpaste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filehtml.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fileimage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filetext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="main.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_21.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_22.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_25.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_26.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_27.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_28.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_31.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_33.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_37.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\mainpage_38.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="qml.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="easybooks\res_pic_14.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rotaleft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rotaright.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="easybooks\upload_resource.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\vieweye.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\zoomin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\zoomout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

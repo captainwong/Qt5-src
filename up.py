@@ -16,10 +16,11 @@ def upgrade(profile):
                     line = "greaterThan(QT_MAJOR_VERSION, 5): QT += widgets"
                 f.write(line)
 
-def make(profile):
+def make(folder, profile):
     cmd = "qmake -tp vc " + profile
     print("calling: " + cmd)
-    print(subprocess.call(cmd, shell=True))
+    os.chdir(folder)
+    print(subprocess.check_output(cmd, shell=True).decode())
 
 
 def walk(rootdir):
@@ -28,7 +29,7 @@ def walk(rootdir):
             path = os.path.join(root, f)
             if path[-4:] == ".pro":
                 upgrade(path)
-                make(path)
+                make(root, path)
 
 if __name__ == "__main__":
     walk("E:\\dev_qt\\Qt5-src")
