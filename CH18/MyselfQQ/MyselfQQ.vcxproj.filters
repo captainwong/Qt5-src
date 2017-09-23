@@ -108,6 +108,15 @@
     <ClCompile Include="release\qrc_images.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClInclude Include="ui_client.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_server.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="client.ui">

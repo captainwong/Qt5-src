@@ -56,6 +56,9 @@
     <ClCompile Include="release\moc_dialog.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClInclude Include="ui_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="dialog.ui">

@@ -10,10 +10,10 @@ def upgrade(profile):
         f.close()
         with open(profile, 'w') as f:
             for line in lines:
-                if re.match("QT\\t\\t\+\= core gui", line):
-                    line = "QT\t\t+= core gui widgets"
+                if re.match(r"QT[\s]+\+\= core gui", line):
+                    line = "QT\t\t+= core gui widgets\n"
                 elif re.match("greaterThan\(QT_MAJOR_VERSION\, 4", line):
-                    line = "greaterThan(QT_MAJOR_VERSION, 5): QT += widgets"
+                    line = "greaterThan(QT_MAJOR_VERSION, 5): QT += widgets\n"
                 f.write(line)
 
 def make(folder, profile):
@@ -30,6 +30,7 @@ def walk(rootdir):
             if path[-4:] == ".pro":
                 upgrade(path)
                 make(root, path)
+                #return
 
 if __name__ == "__main__":
     walk("E:\\dev_qt\\Qt5-src")

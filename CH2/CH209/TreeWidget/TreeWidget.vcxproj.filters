@@ -56,6 +56,9 @@
     <ClCompile Include="release\moc_widget.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClInclude Include="ui_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="widget.ui">

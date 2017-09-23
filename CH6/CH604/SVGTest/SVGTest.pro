@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT		+= core gui widgets
 QT       += svg
 greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 TARGET = SVGTest
