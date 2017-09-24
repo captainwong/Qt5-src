@@ -66,10 +66,10 @@ BaseInfo::BaseInfo(QWidget *parent) :
     RightLayout->addWidget(IntroductionLabel);
     RightLayout->addWidget(IntroductionTextEdit);
     /*************************************/
-    QGridLayout *mainLayout =new QGridLayout(this);
+	QHBoxLayout *mainLayout =new QHBoxLayout(this);
     mainLayout->setMargin(15);
     mainLayout->setSpacing(10);
-    mainLayout->addLayout(LeftLayout,0,0);
-    mainLayout->addLayout(RightLayout,0,1);
+    mainLayout->addLayout(LeftLayout);
+    mainLayout->addLayout(RightLayout);
     mainLayout->setSizeConstraint(QLayout::SetFixedSize);
 }
