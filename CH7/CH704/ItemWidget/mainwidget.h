@@ -15,6 +15,7 @@ public:
     MainWidget(QWidget *parent = 0);
     ~MainWidget();
 
+protected:
     void createControlFrame();
 
 private:
@@ -26,6 +27,7 @@ private:
     QGraphicsView *view;
     QFrame *ctrlFrame;
     PixItem *pixItem;
+
 public slots:
     void slotRotate(int);
     void slotScale(int);

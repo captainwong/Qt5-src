@@ -7,9 +7,11 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 
-class Butterfly : public QObject,public QGraphicsItem
+class Butterfly : public QObject, public QGraphicsItem
 {
     Q_OBJECT
+	Q_INTERFACES(QGraphicsItem)
+
 public:
     explicit Butterfly(QObject *parent = 0);
     void timerEvent(QTimerEvent *);

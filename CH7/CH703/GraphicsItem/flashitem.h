@@ -5,21 +5,23 @@
 #include <QGraphicsItem>
 #include <QPainter>
 
-class FlashItem : public QObject,public QGraphicsItem
+class FlashItem : public QObject, public QGraphicsItem
 {
-    Q_OBJECT
+	Q_OBJECT
+	Q_INTERFACES(QGraphicsItem)
+
 public:
-    explicit FlashItem(QObject *parent = 0);
-    QRectF boundingRect() const;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
-    void timerEvent(QTimerEvent *);
+	explicit FlashItem(QObject *parent = 0);
+	virtual QRectF boundingRect() const override;
+	virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+	virtual void timerEvent(QTimerEvent *) override;
 private:
-    bool flash;
-    QTimer *timer;
+	bool flash;
+	QTimer *timer;
 signals:
-    
-public slots:
-    
+
+	public slots :
+
 };
 
 #endif // FLASHITEM_H

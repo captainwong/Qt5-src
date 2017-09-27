@@ -8,30 +8,27 @@
 
 class ModelEx : public QAbstractTableModel
 {
-    Q_OBJECT
+	Q_OBJECT
 public:
-    explicit ModelEx(QObject *parent = 0);
+	explicit ModelEx(QObject *parent = 0);
 
-    virtual int rowCount(const QModelIndex &parent=QModelIndex()) const;
-    virtual int columnCount(const QModelIndex &parent=QModelIndex()) const;
+	virtual int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+	virtual int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
-    QVariant data(const QModelIndex &index, int role) const;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    
-signals:
-    
-public slots:
+	virtual QVariant data(const QModelIndex &index, int role) const override;
+	virtual QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
+
 private:
-    QVector<short> army;
-    QVector<short> weaponType;
+	QVector<short> army;
+	QVector<short> weaponType;
 
-    QMap<short,QString> armyMap;
-    QMap<short,QString> weaponTypeMap;
+	QMap<short, QString> armyMap;
+	QMap<short, QString> weaponTypeMap;
 
-    QStringList  weapon;
-    QStringList  header;
+	QStringList  weapon;
+	QStringList  header;
 
-    void populateModel();
+	void populateModel();
 };
 
 #endif // MODELEX_H
