@@ -4,6 +4,9 @@
 #include <QToolBox>
 #include <QToolButton>
 #include "widget.h"
+#include "MyToolBtn.h"
+
+using toolbtn = QToolButton;
 
 class Drawer : public QToolBox
 {
@@ -20,16 +23,19 @@ private slots:
     void showChatWidget7();
     void showChatWidget8();
     void showChatWidget9();
+
+	void slot_show_chat_widget(MyToolBtn* btn);
+
 private:
-    QToolButton *toolBtn1;
-    QToolButton *toolBtn2;
-    QToolButton *toolBtn3;
-    QToolButton *toolBtn4;
-    QToolButton *toolBtn5;
-    QToolButton *toolBtn6;
-    QToolButton *toolBtn7;
-    QToolButton *toolBtn8;
-    QToolButton *toolBtn9;    
+	toolbtn *toolBtn1;
+	toolbtn *toolBtn2;
+	toolbtn *toolBtn3;
+	toolbtn *toolBtn4;
+	toolbtn *toolBtn5;
+	toolbtn *toolBtn6;
+	toolbtn *toolBtn7;
+	toolbtn *toolBtn8;
+	toolbtn *toolBtn9;
     Widget *chatWidget1;
     Widget *chatWidget2;
     Widget *chatWidget3;

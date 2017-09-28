@@ -15,12 +15,14 @@ SOURCES += main.cpp\
         widget.cpp \
     drawer.cpp \
     server.cpp \
-    client.cpp
+    client.cpp \
+    MyToolBtn.cpp
 
 HEADERS  += widget.h \
     drawer.h \
     server.h \
-    client.h
+    client.h \
+    MyToolBtn.h
 
 FORMS    += widget.ui \
     server.ui \
