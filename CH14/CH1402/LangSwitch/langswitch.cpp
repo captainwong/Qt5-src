@@ -57,7 +57,7 @@ void LangSwitch::changeTr(const QString& langCode)
     }
     translator = new QTranslator;
     QString qmFilename = "lang_" + langCode;
-    if (translator->load(QString("D:/Qt/CH14/CH1402/LangSwitch/")+qmFilename))
+    if (translator->load(qmFilename))
     {
         qApp->installTranslator(translator);
     }
