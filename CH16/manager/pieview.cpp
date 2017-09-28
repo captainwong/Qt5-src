@@ -89,11 +89,11 @@ QModelIndex PieView::indexAt(const QPoint &point) const
     return QModelIndex();
 }
 
-QRect PieView::visualRect(const QModelIndex &index) const{}
+QRect PieView::visualRect(const QModelIndex &index) const { return QRect(); }
 void PieView::scrollTo(const QModelIndex &index, ScrollHint hint){}
-QModelIndex PieView::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers){}
-int PieView::horizontalOffset()const{}
-int PieView::verticalOffset()const{}
-bool PieView::isIndexHidden(const QModelIndex &index) const{}
+QModelIndex PieView::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers) { return QModelIndex(); }
+int PieView::horizontalOffset()const { return 0; }
+int PieView::verticalOffset()const { return 0; }
+bool PieView::isIndexHidden(const QModelIndex &index) const { return false; }
 void PieView::setSelection(const QRect &rect, QItemSelectionModel::SelectionFlags command){}
-QRegion PieView::visualRegionForSelection(const QItemSelection &selection) const{}
+QRegion PieView::visualRegionForSelection(const QItemSelection &selection) const { return QRegion(); }
