@@ -5,7 +5,7 @@ Window {
     visible: true
     MainForm {
         anchors.fill: parent
-        mouseArea.onClicked: {
+        mouseArea2.onClicked: {
             Qt.quit();
         }
 

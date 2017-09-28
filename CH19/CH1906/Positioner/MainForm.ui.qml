@@ -11,7 +11,7 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
     }
-/*
+
     Row {
         x:25
         y:25
@@ -42,7 +42,8 @@ Rectangle {
         BlueRectangle { }
         BlueRectangle { }
     }
-*/
+
+/*
     Flow {
         anchors.fill: parent
         anchors.margins: 15
@@ -51,4 +52,6 @@ Rectangle {
         BlueRectangle { }
         GreenRectangle { }
     }
+
+	*/
 }

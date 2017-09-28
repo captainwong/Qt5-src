@@ -1,7 +1,7 @@
 import QtQuick 2.3
 
 Rectangle {
-    property alias mouseArea: mouseArea
+    property alias mouseArea2: mouseArea
 
     width: 360
     height: 360

@@ -3,8 +3,8 @@ import QtQuick 2.3
 Rectangle {
     property alias mouseArea: mouseArea
 
-    width: 360
-    height: 360
+    width: 640
+    height: 480
 
     MouseArea {
         id: mouseArea
